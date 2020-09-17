@@ -531,7 +531,7 @@ footer {
 	.pregled2 {
 		display: inline-block;
 		width: 35%;
-		height: 408px;
+		height: 407px;
 		margin-top: 10px;
 	}
 	hr {
@@ -651,7 +651,7 @@ footer {
 	.pregled2 {
 		display: inline-block;
 		width: 41%;
-		height: 371px;
+		height: 375px;
 		margin-top: -10px;
 		border: 4px solid #1c4477;
 	}
@@ -659,7 +659,7 @@ footer {
 		display: inline-block;
 		float: right;
 		width: 51%;
-		height: 371px;
+		height: 375px;
 		margin-left: 15%;
 		margin-top: 25px;
 		position: relative;
