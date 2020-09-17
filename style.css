@@ -74,7 +74,7 @@ a.link:hover {
 	background-color: #F9F9F9;
 	min-width: 135px;
 	margin-left: 26px;
-	margin-top: 1px;
+	margin-top: 0px;
 	z-index: 1;
 	outline: 2px solid black;
 }
@@ -509,14 +509,14 @@ footer {
 	}
 	.dropdown-content a {
 		font-size: 17px;
-		padding: 13px 16px;
+		padding: 14px 18px 14px 16px;
 		letter-spacing: 0.5px;
 	}
 	.mySlides {
-		height: 413px;
+		height: 411px;
 	}
 	.slideshow-container {
-		height: 443px;
+		height: 441px;
 		top: 25px;
 	}
 	.align {
@@ -531,7 +531,7 @@ footer {
 	.pregled2 {
 		display: inline-block;
 		width: 35%;
-		height: 407px;
+		height: 405px;
 		margin-top: 10px;
 	}
 	hr {
@@ -752,6 +752,9 @@ footer {
 	}
 	.pregled2 {
 		margin-top: -19px;
+	}
+	.pregled2, .pregled3 {
+		height: 372px;
 	}
 	.vijest1 img, .vijest2 img {
 		width: 35%;
