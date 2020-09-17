@@ -796,6 +796,7 @@ footer {
 		top: 11px;
 		right: 10px;
 		cursor: pointer;
+		outline: none;
 		/*overflow: hidden;*/
 	}
 	.icon span {
@@ -805,6 +806,7 @@ footer {
 		background: #c1d6f1;
 		border-radius: 9px;
 		transition: 0.25s ease-in-out all;
+		outline: none;
 	}
 	.icon span:nth-child(1) {
 		top: 0;
