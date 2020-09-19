@@ -35,7 +35,7 @@ function openTable() {
     x.style.display = "none";
   }
 }
-
+/*
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -60,7 +60,7 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+}*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
