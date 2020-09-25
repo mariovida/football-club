@@ -360,7 +360,29 @@ article button {
 	cursor: pointer;
 }
 footer {
-	display: none;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 120px;
+	margin-top: 80px;
+	background-color: #1C4477;
+	text-align: center;
+}
+.footer-social {
+	margin-top: 35px;
+}
+.footer-social a {
+	font-size: 32px;
+	color: #e6e6e6;
+	padding: 5px;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+footer p {
+	font-size: 13px;
+	color: #d9d9d9;
+	margin-left: -15px;
+	margin-top: 9px;
 }
 
 /*@media (max-width: 1680px) {
@@ -928,13 +950,8 @@ footer {
 		font-size: 13px;
 	}
 	footer {
-		display: block;
-		float: left;
-		width: 100%;
 		height: 120px;
 		margin-top: 80px;
-		background-color: #1C4477;
-		text-align: center;
 	}
 	.footer-social {
 		margin-top: 35px;
