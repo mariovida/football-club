@@ -74,7 +74,7 @@ a.link:hover {
 	background-color: #F9F9F9;
 	min-width: 135px;
 	margin-left: 26px;
-	margin-top: 0px;
+	margin-top: 0.5px;
 	z-index: 1;
 	outline: 2px solid black;
 }
@@ -314,17 +314,24 @@ article p {
 	padding-right: 20px;
 	padding-top: 15px;
 }
-article button {
+article a {
 	float: right;
 	position: relative;
 	top: 35px;
 	right: 20px;
 	outline: none;
 	border: 2px solid #1C4477;
+	background-color: #F9F9F9;
+	color: black;
 	padding: 10px 19px;
 	font-size: 16px;
+	text-decoration: none;
 	letter-spacing: 1px;
 	cursor: pointer;
+}
+article a:active {
+	border-color: #132f53;
+	font-weight: bold;
 }
 .modal {
 	display: none;
@@ -421,7 +428,7 @@ footer p {
 		padding-left: 15px;
 		padding-bottom: 6px;
 	}
-	article button {
+	article a {
 		top: 35px;
 		right: 20px;
 	}
@@ -484,7 +491,7 @@ footer p {
 		padding-right: 20px;
 		padding-top: 15px;
 	}
-	article button {
+	article a {
 		top: 14px;
 		right: 20px;
 	}
@@ -528,7 +535,7 @@ footer p {
 	.dropdown-content {
 		min-width: 100px;
 		margin-left: 16px;
-		margin-top: 1px;
+		margin-top: 0.5px;
 	}
 	.dropdown-content a {
 		font-size: 17px;
@@ -613,7 +620,7 @@ footer p {
 		padding-right: 20px;
 		padding-top: 15px;
 	}
-	article button {
+	article a {
 		float: left;
 		top: 35px;
 		left: 20px;
@@ -732,7 +739,7 @@ footer p {
 		font-size: 16px;
 		padding-top: 8px;
 	}
-	article button {
+	article a {
 		float: left;
 		top: 25px;
 		padding: 9px 11px;
@@ -767,6 +774,7 @@ footer p {
 	.dropdown-content {
 		min-width: 50px;
 		margin-left: 11px;
+		margin-top: 0.5px;
 	}
 	.dropdown-content a {
 		font-size: 14px;
@@ -786,7 +794,7 @@ footer p {
 	.vijest1 p, .vijest2 p {
 		padding-top: 6px;
 	}
-	article button {
+	article a {
 		top: 21px;
 		margin-bottom: 35px;
 	}
@@ -945,7 +953,7 @@ footer p {
 		font-size: 15px;
 		padding-top: 0px;
 	}
-	article button {
+	article a {
 		top: 20px;
 		padding: 8px 14px;
 		font-size: 13px;
@@ -955,7 +963,8 @@ footer p {
 		margin-top: 80px;
 	}
 	.footer-social {
-		margin-top: 35px;
+		margin-top: 30px;
+		display: block;
 	}
 	.footer-social a {
 		font-size: 32px;
@@ -1081,7 +1090,7 @@ footer p {
 		font-size: 14px;
 		margin-top: -55px;
 	}
-	article button {
+	article a {
 		top: 20px;
 		padding: 9px 15px;
 	}
