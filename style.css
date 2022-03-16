@@ -64,6 +64,9 @@ a.link {
 a.link:hover {
 	background-color: #4583d3;
 }
+a.nothing {
+	cursor: none;
+}
 .dropdown {
 	float: left;
 	overflow: hidden;
