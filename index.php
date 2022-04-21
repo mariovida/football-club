@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	include 'admin/connect.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +22,7 @@
 	<link rel="shortcut icon" href="img/fav.png" />
 </head>
 <body>
+    <button onclick="topFunction()" id="upButton" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
     <nav id="navigation">
 		<div class="wrapper">
 			<a href="index.php"><img src="img/logo.png"></a>
@@ -96,6 +101,19 @@
 
     <div id="vijesti" class="vijesti">
         <h1>VIJESTI</h1>
+        <div class="content">
+        <?php
+		    $query = "SELECT * FROM vijesti LIMIT 4";
+			$result = mysqli_query($dbc, $query);
+			while($row = mysqli_fetch_array($result)) {
+				echo "<article>
+					<div class='news'>
+					<h4><a href='clanak.php?id=".$row['id']."'>".$row['naslov']."</a></h4>
+					<h5>".$row['sazetak']."</h5>
+					</div>
+					</article>";
+			}?>
+        </div>
     </div>
 
     <footer>
