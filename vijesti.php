@@ -19,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>MNK BROD</title>
+	<title>MNK BROD - Vijesti</title>
 	<link rel="shortcut icon" href="img/fav.png" />
 </head>
 <body>
@@ -76,44 +76,12 @@
 		</div>
 	</nav>
 
-    <div class="main"><div class="animate__animated animate__slideInLeft main-img"></div>
-        <div class="animate__animated animate__slideInRight main-game">
-			<div class="last-game">
-                <h2>POSLJEDNJA UTAKMICA</h2>
-                <div class="club-logo"><img src="img/fav.png"/></div>
-                <div class="game-info">
-				    <p>MNK Brod  -  MNK Brod</p>
-                    <pre>17.04.2022.</pre>
-				    <pre>2    :    1</pre>
-                </div>
-                <div class="club-logo"><img src="img/fav.png"/></div>
-			</div><hr/>
-			<div class="next-game">
-                <h2>SLJEDEĆA UTAKMICA</h2>
-                <div class="club-logo"><img src="img/fav.png"/></div>
-                <div class="game-info">
-                    <p>MNK Brod  -  MNK Brod</p>
-                    <pre>21.04.2022.</pre>
-                    <pre>20:30</pre>
-                </div>
-                <div class="club-logo"><img src="img/fav.png"/></div>
-			</div>
-            <a href="#vijesti" class="cta">
-                <span>VIJESTI</span>
-                <svg viewBox="0 0 13 10" height="15px" width="15px">
-                    <path d="M1,5 L11,5"></path>
-                    <polyline points="8 1 12 5 8 9"></polyline>
-                </svg>
-            </a>
-        </div>
-    </div>
-
     <div id="vijesti" class="vijesti">
         <h1>VIJESTI</h1>
-        <div class="js-scroll fade-in-bottom content">
+        <div class="content">
         <?php
             define('UPLPATH', 'img/');
-		    $query = "SELECT * FROM vijesti ORDER BY id DESC LIMIT 6";
+		    $query = "SELECT * FROM vijesti ORDER BY id DESC";
 			$result = mysqli_query($dbc, $query);
 			while($row = mysqli_fetch_array($result)) {
 				echo "<article>
