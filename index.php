@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				<div class="dropdown">
-					<li><a href="index.html" class="link">NATJECANJA</a></li>
+					<li><a class="link">NATJECANJA</a></li>
 					<div class="dropdown-content">
 						<a href="index.html">II. HMNL Istok</a>
 						<a href="index.html">II. HMNL Kup</a>
@@ -107,6 +107,36 @@
             </a>
         </div>
     </div>
+
+    <table class="score-table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th style="width:50%;text-align:left;padding-left:20px;">KLUB</th>
+            <th>OU</th>
+            <th>P</th>
+            <th>N</th>
+            <th>I</th>
+            <th>B</th>
+        </tr>
+        </thead>
+        <tbody>
+            <?php
+		    $query = "SELECT * FROM tablica ORDER BY B DESC";
+			$result = mysqli_query($dbc, $query);
+            $counter = 1;
+			while($row = mysqli_fetch_array($result)) {
+				echo "<tr><td>$counter</td>
+                <td style='text-align:left;padding-left:20px'>".$row['klub']."</td>
+                <td>".$row['OU']."</td>
+                <td>".$row['P']."</td>
+                <td>".$row['N']."</td>
+                <td>".$row['I']."</td>
+                <td><b>".$row['B']."</b></td></tr>";
+                $counter++;
+		    }?>
+        <tbody>
+    </table>
 
     <div id="vijesti" class="vijesti">
         <h1>VIJESTI</h1>

@@ -19,8 +19,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>MNK BROD - Vijesti</title>
+	<title>Vijesti - MNK Brod</title>
 	<link rel="shortcut icon" href="img/fav.png" />
+    <style>
+        .vijesti {
+            margin-top: 50px; 
+        }
+    </style>
 </head>
 <body>
     <button onclick="topFunction()" id="upButton" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
@@ -57,7 +62,7 @@
 					</div>
 				</div>
 				<div class="dropdown">
-					<li><a href="index.html" class="link">NATJECANJA</a></li>
+					<li><a class="link">NATJECANJA</a></li>
 					<div class="dropdown-content">
 						<a href="index.html">II. HMNL Istok</a>
 						<a href="index.html">II. HMNL Kup</a>
