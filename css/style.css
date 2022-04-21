@@ -303,7 +303,7 @@ hr {
     padding: 18px 21px;
     transition: all 0.2s ease;
     border: none;
-    background: none;
+    background-color: none;
     cursor: pointer;
     text-decoration: none;
 }
@@ -314,7 +314,7 @@ hr {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #b1dae7;
+    background-color: #b1dae7;
     width: 48px;
     height: 48px;
     transition: all 0.3s ease;
@@ -340,7 +340,7 @@ hr {
 }
 .cta:hover:before {
     width: 100%;
-    background: #1C4477;
+    background-color: #1C4477;
 }
 .cta:hover span {
     color: #E6E6E6;
@@ -351,6 +351,38 @@ hr {
 }   
 .cta:active {
     transform: scale(0.95);
+}
+.score-table {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    font-size: 13px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    white-space: nowrap;
+    background-color: white;
+    table-layout: auto;
+}
+.score-table td, .score-table th {
+    text-align: center;
+    padding: 14px 0;
+}
+.score-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 15px;
+}
+.score-table thead th {
+    color: #ffffff;
+    background-color: #4FC3A1;
+}
+.score-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background-color: #324960;
+}
+.score-table tr:nth-child(even) {
+    background-color: #F8F8F8;
 }
 .vijesti {
     min-height: 400px;
@@ -1057,7 +1089,7 @@ footer p {
 		position: absolute;
 		height: 5px;
 		width: 90%;
-		background: #c1d6f1;
+		background-color: #c1d6f1;
 		border-radius: 9px;
 		transition: 0.25s ease-in-out all;
 		outline: none;
