@@ -23,11 +23,9 @@
     <section id="left-bar">
 		<h2>MNK BROD</h2>
 		<a href="index.php">Početna</a>
-		<a href="reservations.php">Reservations</a>
-		<a href="reservation_check.php">Pending reservations</a>
-        <a href="content.php">Content</a>
-        <a href="register_user.php">Register</a>
-		<a href="logout.php">Logout</a>
+        <a href="unos.php">Dodavanje vijesti</a>
+        <a href="register_user.php">Registracija korisnika</a>
+		<a href="logout.php">Odjava</a>
 	</section>
 
     <form method="POST" action="" name="reg" class="reg_form">

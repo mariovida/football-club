@@ -25,57 +25,10 @@
 
     <section id="left-bar">
 		<h2>MNK BROD</h2>
-        <hr/>
-        <h4>USER: <?php echo $_SESSION['username']; ?></h4>
-        <hr/>
 		<a href="index.php">Početna</a>
-		<a href="reservations.php">Reservations</a>
-		<a href="reservation_check.php">Pending reservations</a>
-        <a href="content.php">Content</a>
-        <a href="register_user.php">Register</a>
-		<a href="logout.php">Logout</a>
+        <a href="unos.php">Dodavanje vijesti</a>
+        <a href="register_user.php">Registracija korisnika</a>
+		<a href="logout.php">Odjava</a>
 	</section>
-
-    <div class="reservation_status">
-        <h1>RESERVATIONS MADE FOR TODAY:</h1>
-        <h2>
-            <?php 
-            if ($dbc) {
-                $counter = 0;
-                $query = "SELECT * FROM reservations WHERE date = CURDATE()";
-                $result = mysqli_query($dbc,$query);
-                if($result) {
-                    while($row = mysqli_fetch_array($result)) {
-                        $counter = $counter + 1;
-                    }
-                echo $counter;
-                }
-            }
-            ?>
-        </h2>
-        <br/><br/><h1><a href="reservation_check.php">PENDING RESERVATIONS:</a></h1>
-        <h2>
-            <?php 
-            if ($dbc) {
-                $counter = 0;
-                $query = "SELECT * FROM reservations_pending WHERE date >= CURDATE()";
-                $result = mysqli_query($dbc,$query);
-                if($result) {
-                    while($row = mysqli_fetch_array($result)) {
-                        $counter = $counter + 1;
-                    }
-                echo $counter;
-                }
-            }
-            ?>
-        </h2>
-    </div>
-
-    <div class="revenue_status">
-        <h1>THIS MONTH'S REVENUE:</h1>
-        <h2>€ 3842,42</h2>
-        <br/><br/><h1>YESTERDAY'S REVENUE:</h1>
-        <h2>€ 1087,95</h2>
-    </div>
 </body>
 </html>
