@@ -7,13 +7,21 @@ icon.addEventListener('click', () => {
 	}
 });
 
+var mybutton = document.getElementById("upButton");
 $(window).scroll(function(){
   if ($(this).scrollTop() > 0) {
   $('#navigation').addClass('change_color');
+  mybutton.style.display = "block";
   } else {
   $('#navigation').removeClass('change_color');
+  mybutton.style.display = "none";
   }
 });
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
