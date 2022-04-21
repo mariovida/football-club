@@ -1,6 +1,6 @@
 <h1 align="center">Football Club "BROD"</h1>
 
-![image](/img/show2.png)
+![image](/img/show_2.png)
 
 <h3 align="center">✔️ Finished</h3>
 
